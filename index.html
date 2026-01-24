@@ -3,310 +3,216 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
+    <title>Pathma Kowsik Pandiyan A - Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Mobile Menu Toggle -->
-    <div class="menu-toggle" id="menuToggle">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-header">
-            <h2>Your Name</h2>
-        </div>
-        <ul class="nav-links">
-            <li><a href="#home" class="nav-link">Home</a></li>
-            <li><a href="#about" class="nav-link">About</a></li>
-            <li><a href="#skills" class="nav-link">Skills</a></li>
-            <li><a href="#projects" class="nav-link">Projects</a></li>
-            <li><a href="#experience" class="nav-link">Experience</a></li>
-            <li><a href="#education" class="nav-link">Education</a></li>
-            <li><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
-    </nav>
-
     <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <div class="profile-container">
-                <div class="profile-img">
-                    <img src="https://via.placeholder.com/200" alt="Profile Picture">
-                </div>
+    <section class="hero">
+        <div class="container">
+            <div class="profile-circle">
+                <img src="https://via.placeholder.com/200" alt="Profile Picture">
             </div>
-            <h1>Hello! This is <span class="highlight">Your Name</span></h1>
-            <p class="hero-subtitle">A Forward Thinking Developer Looking Forward To Work On Interesting Projects That Creates An Impact In This Modern World</p>
-            <a href="#about" class="btn-get-started">Get Started</a>
-        </div>
-        <div class="scroll-indicator">
-            <span></span>
+            <h1 class="name">Pathma Kowsik Pandiyan A</h1>
+            <p class="tagline">CSE (AI & ML) Student | Full Stack Developer</p>
+            <nav class="main-nav">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#certifications">Certifications</a>
+                <a href="#contact">Contact</a>
+            </nav>
         </div>
     </section>
 
-    <!-- Main Content Grid -->
-    <section class="content-grid">
+    <!-- About Section -->
+    <section id="about" class="about-section">
         <div class="container">
-            <div class="grid">
-                <!-- About Skills Card -->
-                <div class="grid-item" data-aos="fade-up">
-                    <div class="card-overlay" style="background: linear-gradient(rgba(99, 102, 241, 0.9), rgba(99, 102, 241, 0.7)), url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500') center/cover;"></div>
-                    <div class="card-content">
-                        <h3>ABOUT MY SKILLS</h3>
-                        <a href="#skills" class="card-link">CLICK ME</a>
-                    </div>
-                </div>
+            <h2 class="section-title">
+                <span class="icon">👨‍🎓</span> About Me
+            </h2>
+            <div class="about-content">
+                <p class="about-text">
+                    <span class="icon">🎓</span> I am a <strong>B.E. Computer Science Engineering (Artificial Intelligence & Machine Learning)</strong> student with a strong passion for software development and intelligent systems.
+                </p>
+                <p class="about-text">
+                    <span class="icon">💻</span> I have hands-on experience in <strong>Java application development, full-stack web applications</strong> (MERN), and database-driven systems.
+                </p>
+                <p class="about-text">
+                    <span class="icon">📚</span> My academic focus includes <strong>AI, NLP, IoT, Industry 4.0, and Cloud Computing</strong>. I have completed multiple <strong>NPTEL Elite certifications</strong> and online internships.
+                </p>
+            </div>
 
-                <!-- Education Card -->
-                <div class="grid-item" data-aos="fade-up" data-aos-delay="100">
-                    <div class="card-overlay" style="background: linear-gradient(rgba(139, 92, 246, 0.9), rgba(139, 92, 246, 0.7)), url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=500') center/cover;"></div>
-                    <div class="card-content">
-                        <h3>EDUCATION</h3>
-                        <a href="#education" class="card-link">CLICK ME</a>
-                    </div>
+            <div class="info-box">
+                <div class="info-item">
+                    <span class="info-icon">🏛️</span>
+                    <strong>College:</strong> National Engineering College
                 </div>
+                <div class="info-item">
+                    <span class="info-icon">🎓</span>
+                    <strong>Degree:</strong> B.E CSE (AI & ML)
+                </div>
+                <div class="info-item">
+                    <span class="info-icon">📧</span>
+                    <strong>Email:</strong> <a href="mailto:pathmakowsikpandiyan7@gmail.com">pathmakowsikpandiyan7@gmail.com</a>
+                </div>
+            </div>
 
-                <!-- Projects Card -->
-                <div class="grid-item" data-aos="fade-up" data-aos-delay="200">
-                    <div class="card-overlay" style="background: linear-gradient(rgba(236, 72, 153, 0.9), rgba(236, 72, 153, 0.7)), url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=500') center/cover;"></div>
-                    <div class="card-content">
-                        <h3>PROJECTS</h3>
-                        <a href="#projects" class="card-link">CLICK ME</a>
-                    </div>
-                </div>
-
-                <!-- Experience Card -->
-                <div class="grid-item" data-aos="fade-up" data-aos-delay="300">
-                    <div class="card-overlay" style="background: linear-gradient(rgba(59, 130, 246, 0.9), rgba(59, 130, 246, 0.7)), url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=500') center/cover;"></div>
-                    <div class="card-content">
-                        <h3>EXPERIENCE</h3>
-                        <a href="#experience" class="card-link">CLICK ME</a>
-                    </div>
-                </div>
-
-                <!-- Certifications Card -->
-                <div class="grid-item" data-aos="fade-up" data-aos-delay="400">
-                    <div class="card-overlay" style="background: linear-gradient(rgba(249, 115, 22, 0.9), rgba(249, 115, 22, 0.7)), url('https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=500') center/cover;"></div>
-                    <div class="card-content">
-                        <h3>CERTIFICATIONS</h3>
-                        <a href="#contact" class="card-link">CLICK ME</a>
-                    </div>
-                </div>
+            <div class="social-buttons">
+                <a href="#" class="btn btn-github">
+                    <span class="btn-icon">⚫</span> GitHub Profile
+                </a>
+                <a href="#" class="btn btn-linkedin">
+                    <span class="btn-icon">🔵</span> LinkedIn Profile
+                </a>
             </div>
         </div>
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="section skills-section">
+    <section id="skills" class="skills-section">
         <div class="container">
-            <h2 class="section-title">My Skills</h2>
-            <div class="skills-container">
-                <div class="skill-category">
-                    <h3>Programming Languages</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">Java</span>
-                        <span class="skill-tag">C++</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Web Technologies</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">React</span>
-                        <span class="skill-tag">Node.js</span>
-                        <span class="skill-tag">HTML/CSS</span>
-                        <span class="skill-tag">MongoDB</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Tools & Frameworks</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Git</span>
-                        <span class="skill-tag">Docker</span>
-                        <span class="skill-tag">AWS</span>
-                        <span class="skill-tag">TensorFlow</span>
-                    </div>
-                </div>
+            <h2 class="section-title">
+                <span class="icon">💡</span> Technical Skills
+            </h2>
+            <div class="skills-grid">
+                <span class="skill-tag">Java</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">C</span>
+                <span class="skill-tag">C++</span>
+                <span class="skill-tag">HTML</span>
+                <span class="skill-tag">CSS</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">React.js</span>
+                <span class="skill-tag">Node.js</span>
+                <span class="skill-tag">MongoDB</span>
+                <span class="skill-tag">MySQL</span>
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">Machine Learning</span>
+                <span class="skill-tag">NLP</span>
+                <span class="skill-tag">Cloud Computing</span>
+                <span class="skill-tag">IoT</span>
             </div>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="section projects-section">
+    <section id="projects" class="projects-section">
         <div class="container">
-            <h2 class="section-title">Projects</h2>
+            <h2 class="section-title">
+                <span class="icon">🚀</span> Projects
+            </h2>
             <div class="projects-grid">
                 <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600" alt="Project 1">
-                    </div>
-                    <div class="project-info">
+                    <div class="project-header">
                         <h3>E-Commerce Platform</h3>
-                        <p>Full-stack web application with payment integration, user authentication, and real-time inventory management.</p>
-                        <div class="project-tech">
-                            <span>React</span>
-                            <span>Node.js</span>
-                            <span>MongoDB</span>
-                        </div>
+                        <span class="project-year">2024</span>
+                    </div>
+                    <p>Full-stack web application with payment integration, user authentication, and admin dashboard.</p>
+                    <div class="project-tags">
+                        <span>MERN</span>
+                        <span>React</span>
+                        <span>Node.js</span>
                     </div>
                 </div>
 
                 <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600" alt="Project 2">
+                    <div class="project-header">
+                        <h3>AI Chatbot</h3>
+                        <span class="project-year">2024</span>
                     </div>
-                    <div class="project-info">
-                        <h3>Data Analytics Dashboard</h3>
-                        <p>Interactive dashboard for visualizing complex datasets with custom charts and real-time updates.</p>
-                        <div class="project-tech">
-                            <span>Python</span>
-                            <span>Django</span>
-                            <span>D3.js</span>
-                        </div>
+                    <p>Natural Language Processing based chatbot for customer support automation.</p>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>NLP</span>
+                        <span>TensorFlow</span>
                     </div>
                 </div>
 
                 <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600" alt="Project 3">
+                    <div class="project-header">
+                        <h3>IoT Smart Home</h3>
+                        <span class="project-year">2023</span>
                     </div>
-                    <div class="project-info">
-                        <h3>Mobile Task Manager</h3>
-                        <p>Cross-platform mobile app for task management with cloud sync and collaborative features.</p>
-                        <div class="project-tech">
-                            <span>React Native</span>
-                            <span>Firebase</span>
-                            <span>Redux</span>
-                        </div>
+                    <p>Smart home automation system with sensor integration and mobile app control.</p>
+                    <div class="project-tags">
+                        <span>IoT</span>
+                        <span>Arduino</span>
+                        <span>React Native</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Experience Section -->
-    <section id="experience" class="section experience-section">
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications-section">
         <div class="container">
-            <h2 class="section-title">Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>Senior Software Developer</h3>
-                        <h4>Tech Company Inc.</h4>
-                        <p class="timeline-date">Jan 2022 - Present</p>
-                        <p>Led development of microservices architecture, mentored junior developers, and improved system performance by 40%.</p>
-                    </div>
+            <h2 class="section-title">
+                <span class="icon">🏆</span> Certifications & Internships
+            </h2>
+            <div class="cert-grid">
+                <div class="cert-card">
+                    <h3>NPTEL – IoT</h3>
+                    <p>Elite | 2024</p>
+                    <a href="#" class="cert-link">View Cert</a>
                 </div>
 
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>Full Stack Developer</h3>
-                        <h4>Startup Solutions</h4>
-                        <p class="timeline-date">Jun 2020 - Dec 2021</p>
-                        <p>Built responsive web applications, implemented RESTful APIs, and collaborated with cross-functional teams.</p>
-                    </div>
+                <div class="cert-card">
+                    <h3>NPTEL – Cloud Computing</h3>
+                    <p>Elite | 2024</p>
+                    <a href="#" class="cert-link">View Cert</a>
                 </div>
 
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>Junior Developer</h3>
-                        <h4>Web Agency Ltd.</h4>
-                        <p class="timeline-date">Jan 2019 - May 2020</p>
-                        <p>Developed client websites, fixed bugs, and learned industry best practices in agile environment.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Education Section -->
-    <section id="education" class="section education-section">
-        <div class="container">
-            <h2 class="section-title">Education</h2>
-            <div class="education-grid">
-                <div class="education-card">
-                    <div class="education-icon">🎓</div>
-                    <h3>Master of Science in Computer Science</h3>
-                    <h4>University Name</h4>
-                    <p class="education-year">2018 - 2020</p>
-                    <p>Specialized in Machine Learning and Data Science. GPA: 3.8/4.0</p>
+                <div class="cert-card">
+                    <h3>NPTEL – Industry 4.0</h3>
+                    <p>Elite | 2024</p>
+                    <a href="#" class="cert-link">View Cert</a>
                 </div>
 
-                <div class="education-card">
-                    <div class="education-icon">🎓</div>
-                    <h3>Bachelor of Technology</h3>
-                    <h4>Engineering College</h4>
-                    <p class="education-year">2014 - 2018</p>
-                    <p>Computer Science and Engineering. First Class with Distinction.</p>
+                <div class="cert-card">
+                    <h3>CodeSoft Internship</h3>
+                    <p>AI & NLP | Python</p>
+                    <a href="#" class="cert-link">Certificate</a>
+                </div>
+
+                <div class="cert-card">
+                    <h3>TechNest Internship</h3>
+                    <p>AI & NLP | Python</p>
+                    <a href="#" class="cert-link">Certificate</a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="section contact-section">
+    <section id="contact" class="contact-section">
         <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <div class="contact-icon">📧</div>
-                        <h3>Email</h3>
-                        <p>your.email@example.com</p>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">📱</div>
-                        <h3>Phone</h3>
-                        <p>+1 (123) 456-7890</p>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">📍</div>
-                        <h3>Address</h3>
-                        <p>Your City, State<br>Zip Code, Country</p>
-                    </div>
+            <h2 class="section-title">
+                <span class="icon">✉️</span> Direct Inquiry
+            </h2>
+            <form class="contact-form">
+                <div class="form-row">
+                    <input type="text" placeholder="Your Full Name" required>
+                    <input type="email" placeholder="Your Email Address" required>
                 </div>
-
-                <div class="social-links">
-                    <a href="#" class="social-link">LinkedIn</a>
-                    <a href="#" class="social-link">GitHub</a>
-                    <a href="#" class="social-link">Twitter</a>
-                    <a href="#" class="social-link">Instagram</a>
-                </div>
-            </div>
+                <input type="text" placeholder="Subject" required>
+                <textarea placeholder="Write your message here..." rows="6" required></textarea>
+                <button type="submit" class="btn-submit">
+                    Send Message ✈️
+                </button>
+            </form>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <p>&copy; 2024 Your Name. All Rights Reserved.</p>
+        <div class="container">
+            <p>&copy; 2024 Pathma Kowsik Pandiyan A. All Rights Reserved.</p>
+        </div>
     </footer>
 
     <script>
-        // Mobile menu toggle
-        const menuToggle = document.getElementById('menuToggle');
-        const navbar = document.getElementById('navbar');
-
-        menuToggle.addEventListener('click', () => {
-            navbar.classList.toggle('active');
-            menuToggle.classList.toggle('active');
-        });
-
-        // Close menu when clicking a link
-        document.querySelectorAll('.nav-link').forEach(link => {
-            link.addEventListener('click', () => {
-                navbar.classList.remove('active');
-                menuToggle.classList.remove('active');
-            });
-        });
-
         // Smooth scrolling
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
@@ -318,35 +224,11 @@
             });
         });
 
-        // Navbar scroll effect
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 100) {
-                navbar.style.background = 'rgba(17, 24, 39, 0.98)';
-            } else {
-                navbar.style.background = 'rgba(17, 24, 39, 0.95)';
-            }
-        });
-
-        // Simple scroll animation
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -100px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('.grid-item, .project-card, .timeline-item, .education-card').forEach(el => {
-            el.style.opacity = '0';
-            el.style.transform = 'translateY(30px)';
-            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-            observer.observe(el);
+        // Form submission
+        document.querySelector('.contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! I will get back to you soon.');
+            this.reset();
         });
     </script>
 </body>
