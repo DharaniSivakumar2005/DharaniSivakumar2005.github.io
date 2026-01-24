@@ -7,134 +7,181 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Mobile Menu Toggle -->
+    <div class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
     <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="logo">YourName</div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+    <nav class="navbar" id="navbar">
+        <div class="nav-header">
+            <h2>Your Name</h2>
         </div>
+        <ul class="nav-links">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#experience" class="nav-link">Experience</a></li>
+            <li><a href="#education" class="nav-link">Education</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
     </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1>Hi, I'm <span class="highlight">Your Name</span></h1>
-                    <h2>Full Stack Developer</h2>
-                    <p>I build exceptional digital experiences that make people's lives easier</p>
-                    <div class="hero-buttons">
-                        <a href="#contact" class="btn btn-primary">Get In Touch</a>
-                        <a href="#projects" class="btn btn-secondary">View Work</a>
-                    </div>
-                </div>
-                <div class="hero-image">
-                    <div class="profile-pic">
-                        <!-- Replace this with your actual image -->
-                        <img src="https://via.placeholder.com/300" alt="Profile Picture">
-                    </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="profile-container">
+                <div class="profile-img">
+                    <img src="https://via.placeholder.com/200" alt="Profile Picture">
                 </div>
             </div>
+            <h1>Hello! This is <span class="highlight">Your Name</span></h1>
+            <p class="hero-subtitle">A Forward Thinking Developer Looking Forward To Work On Interesting Projects That Creates An Impact In This Modern World</p>
+            <a href="#about" class="btn-get-started">Get Started</a>
+        </div>
+        <div class="scroll-indicator">
+            <span></span>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
+    <!-- Main Content Grid -->
+    <section class="content-grid">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <p>I'm a passionate developer with expertise in creating modern, responsive web applications. With a strong foundation in both front-end and back-end technologies, I deliver solutions that are not only functional but also aesthetically pleasing.</p>
-                <p>My approach combines technical excellence with creative problem-solving to build products that users love.</p>
+            <div class="grid">
+                <!-- About Skills Card -->
+                <div class="grid-item" data-aos="fade-up">
+                    <div class="card-overlay" style="background: linear-gradient(rgba(99, 102, 241, 0.9), rgba(99, 102, 241, 0.7)), url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500') center/cover;"></div>
+                    <div class="card-content">
+                        <h3>ABOUT MY SKILLS</h3>
+                        <a href="#skills" class="card-link">CLICK ME</a>
+                    </div>
+                </div>
+
+                <!-- Education Card -->
+                <div class="grid-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-overlay" style="background: linear-gradient(rgba(139, 92, 246, 0.9), rgba(139, 92, 246, 0.7)), url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=500') center/cover;"></div>
+                    <div class="card-content">
+                        <h3>EDUCATION</h3>
+                        <a href="#education" class="card-link">CLICK ME</a>
+                    </div>
+                </div>
+
+                <!-- Projects Card -->
+                <div class="grid-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-overlay" style="background: linear-gradient(rgba(236, 72, 153, 0.9), rgba(236, 72, 153, 0.7)), url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=500') center/cover;"></div>
+                    <div class="card-content">
+                        <h3>PROJECTS</h3>
+                        <a href="#projects" class="card-link">CLICK ME</a>
+                    </div>
+                </div>
+
+                <!-- Experience Card -->
+                <div class="grid-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-overlay" style="background: linear-gradient(rgba(59, 130, 246, 0.9), rgba(59, 130, 246, 0.7)), url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=500') center/cover;"></div>
+                    <div class="card-content">
+                        <h3>EXPERIENCE</h3>
+                        <a href="#experience" class="card-link">CLICK ME</a>
+                    </div>
+                </div>
+
+                <!-- Certifications Card -->
+                <div class="grid-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card-overlay" style="background: linear-gradient(rgba(249, 115, 22, 0.9), rgba(249, 115, 22, 0.7)), url('https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=500') center/cover;"></div>
+                    <div class="card-content">
+                        <h3>CERTIFICATIONS</h3>
+                        <a href="#contact" class="card-link">CLICK ME</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="skills">
+    <section id="skills" class="section skills-section">
         <div class="container">
-            <h2 class="section-title">Skills & Technologies</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <h3>Frontend</h3>
-                    <ul>
-                        <li>HTML5 & CSS3</li>
-                        <li>JavaScript (ES6+)</li>
-                        <li>React.js</li>
-                        <li>Responsive Design</li>
-                    </ul>
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">C++</span>
+                    </div>
                 </div>
-                <div class="skill-card">
-                    <h3>Backend</h3>
-                    <ul>
-                        <li>Node.js</li>
-                        <li>Python</li>
-                        <li>REST APIs</li>
-                        <li>Database Management</li>
-                    </ul>
+                <div class="skill-category">
+                    <h3>Web Technologies</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">HTML/CSS</span>
+                        <span class="skill-tag">MongoDB</span>
+                    </div>
                 </div>
-                <div class="skill-card">
-                    <h3>Tools & Others</h3>
-                    <ul>
-                        <li>Git & GitHub</li>
-                        <li>VS Code</li>
-                        <li>Figma</li>
-                        <li>Agile/Scrum</li>
-                    </ul>
+                <div class="skill-category">
+                    <h3>Tools & Frameworks</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">TensorFlow</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="projects">
+    <section id="projects" class="section projects-section">
         <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
+            <h2 class="section-title">Projects</h2>
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="https://via.placeholder.com/400x250" alt="Project 1">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600" alt="Project 1">
                     </div>
                     <div class="project-info">
                         <h3>E-Commerce Platform</h3>
-                        <p>A full-stack e-commerce solution with payment integration and admin dashboard.</p>
-                        <div class="project-tags">
+                        <p>Full-stack web application with payment integration, user authentication, and real-time inventory management.</p>
+                        <div class="project-tech">
                             <span>React</span>
                             <span>Node.js</span>
                             <span>MongoDB</span>
                         </div>
                     </div>
                 </div>
+
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="https://via.placeholder.com/400x250" alt="Project 2">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600" alt="Project 2">
                     </div>
                     <div class="project-info">
-                        <h3>Task Management App</h3>
-                        <p>Collaborative task management tool with real-time updates and notifications.</p>
-                        <div class="project-tags">
-                            <span>JavaScript</span>
-                            <span>Firebase</span>
-                            <span>CSS3</span>
+                        <h3>Data Analytics Dashboard</h3>
+                        <p>Interactive dashboard for visualizing complex datasets with custom charts and real-time updates.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Django</span>
+                            <span>D3.js</span>
                         </div>
                     </div>
                 </div>
+
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="https://via.placeholder.com/400x250" alt="Project 3">
+                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600" alt="Project 3">
                     </div>
                     <div class="project-info">
-                        <h3>Portfolio Website</h3>
-                        <p>Modern, responsive portfolio showcasing creative work and projects.</p>
-                        <div class="project-tags">
-                            <span>HTML5</span>
-                            <span>CSS3</span>
-                            <span>JavaScript</span>
+                        <h3>Mobile Task Manager</h3>
+                        <p>Cross-platform mobile app for task management with cloud sync and collaborative features.</p>
+                        <div class="project-tech">
+                            <span>React Native</span>
+                            <span>Firebase</span>
+                            <span>Redux</span>
                         </div>
                     </div>
                 </div>
@@ -142,30 +189,96 @@
         </div>
     </section>
 
+    <!-- Experience Section -->
+    <section id="experience" class="section experience-section">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Senior Software Developer</h3>
+                        <h4>Tech Company Inc.</h4>
+                        <p class="timeline-date">Jan 2022 - Present</p>
+                        <p>Led development of microservices architecture, mentored junior developers, and improved system performance by 40%.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Full Stack Developer</h3>
+                        <h4>Startup Solutions</h4>
+                        <p class="timeline-date">Jun 2020 - Dec 2021</p>
+                        <p>Built responsive web applications, implemented RESTful APIs, and collaborated with cross-functional teams.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Junior Developer</h3>
+                        <h4>Web Agency Ltd.</h4>
+                        <p class="timeline-date">Jan 2019 - May 2020</p>
+                        <p>Developed client websites, fixed bugs, and learned industry best practices in agile environment.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section education-section">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="education-grid">
+                <div class="education-card">
+                    <div class="education-icon">🎓</div>
+                    <h3>Master of Science in Computer Science</h3>
+                    <h4>University Name</h4>
+                    <p class="education-year">2018 - 2020</p>
+                    <p>Specialized in Machine Learning and Data Science. GPA: 3.8/4.0</p>
+                </div>
+
+                <div class="education-card">
+                    <div class="education-icon">🎓</div>
+                    <h3>Bachelor of Technology</h3>
+                    <h4>Engineering College</h4>
+                    <p class="education-year">2014 - 2018</p>
+                    <p>Computer Science and Engineering. First Class with Distinction.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <section id="contact" class="section contact-section">
         <div class="container">
             <h2 class="section-title">Get In Touch</h2>
             <div class="contact-content">
-                <p>I'm currently available for freelance work and full-time opportunities. If you have a project in mind or just want to chat, feel free to reach out!</p>
                 <div class="contact-info">
                     <div class="contact-item">
+                        <div class="contact-icon">📧</div>
                         <h3>Email</h3>
                         <p>your.email@example.com</p>
                     </div>
                     <div class="contact-item">
+                        <div class="contact-icon">📱</div>
                         <h3>Phone</h3>
                         <p>+1 (123) 456-7890</p>
                     </div>
                     <div class="contact-item">
-                        <h3>Location</h3>
-                        <p>Your City, Country</p>
+                        <div class="contact-icon">📍</div>
+                        <h3>Address</h3>
+                        <p>Your City, State<br>Zip Code, Country</p>
                     </div>
                 </div>
+
                 <div class="social-links">
                     <a href="#" class="social-link">LinkedIn</a>
                     <a href="#" class="social-link">GitHub</a>
                     <a href="#" class="social-link">Twitter</a>
+                    <a href="#" class="social-link">Instagram</a>
                 </div>
             </div>
         </div>
@@ -173,12 +286,27 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 Your Name. All rights reserved.</p>
-        </div>
+        <p>&copy; 2024 Your Name. All Rights Reserved.</p>
     </footer>
 
     <script>
+        // Mobile menu toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const navbar = document.getElementById('navbar');
+
+        menuToggle.addEventListener('click', () => {
+            navbar.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        });
+
+        // Close menu when clicking a link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                navbar.classList.remove('active');
+                menuToggle.classList.remove('active');
+            });
+        });
+
         // Smooth scrolling
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
@@ -190,16 +318,35 @@
             });
         });
 
-        // Navbar background on scroll
+        // Navbar scroll effect
         window.addEventListener('scroll', () => {
-            const navbar = document.querySelector('.navbar');
-            if (window.scrollY > 50) {
-                navbar.style.background = 'rgba(255, 255, 255, 0.98)';
-                navbar.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
+            if (window.scrollY > 100) {
+                navbar.style.background = 'rgba(17, 24, 39, 0.98)';
             } else {
-                navbar.style.background = '#ffffff';
-                navbar.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.05)';
+                navbar.style.background = 'rgba(17, 24, 39, 0.95)';
             }
+        });
+
+        // Simple scroll animation
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.grid-item, .project-card, .timeline-item, .education-card').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
         });
     </script>
 </body>
