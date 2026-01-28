@@ -1,135 +1,162 @@
-*{margin:0;padding:0;box-sizing:border-box}
+---
 
-html{scroll-behavior:smooth}
+## style.css
 
-body{
-  font-family:'Inter',sans-serif;
-  background:#f8fafc;
-  color:#0f172a;
+```css
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
 }
 
-.container{
-  max-width:1100px;
-  margin:auto;
-  padding:0 20px;
+body {
+  background: #0f172a;
+  color: #e5e7eb;
 }
 
-.header{
-  background:white;
-  box-shadow:0 5px 20px rgba(0,0,0,0.08);
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
 }
 
-.header-flex{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:30px 0;
+.header {
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  padding: 25px 0;
 }
 
-.header h1{
-  font-size:36px;
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.header p{
-  color:#475569;
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
-nav a{
-  margin-left:18px;
-  text-decoration:none;
-  font-weight:600;
-  color:#2563eb;
+.profile-pic {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  object-fit: cover;
 }
 
-.section{
-  padding:70px 0;
+.header h1 {
+  font-size: 28px;
 }
 
-.gray{
-  background:#f1f5f9;
+.header p {
+  font-size: 16px;
+  opacity: 0.9;
 }
 
-.section h2{
-  margin-bottom:25px;
-  font-size:28px;
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #e5e7eb;
+  font-weight: 500;
 }
 
-.skills span{
-  display:inline-block;
-  background:white;
-  padding:10px 16px;
-  border-radius:20px;
-  margin:6px;
-  box-shadow:0 5px 15px rgba(0,0,0,0.08);
+nav a:hover {
+  text-decoration: underline;
 }
 
-.cards{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:25px;
+.section {
+  padding: 60px 0;
 }
 
-.card{
-  background:white;
-  padding:22px;
-  border-radius:16px;
-  box-shadow:0 10px 30px rgba(0,0,0,0.1);
+.section h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+  color: #60a5fa;
 }
 
-.links a{
-  display:inline-block;
-  margin-right:10px;
-  margin-top:10px;
-  padding:8px 14px;
-  background:#020617;
-  color:white;
-  text-decoration:none;
-  border-radius:6px;
-  font-size:14px;
+.gray {
+  background: #020617;
 }
 
-.btn{
-  display:inline-block;
-  margin-top:12px;
-  padding:8px 16px;
-  background:#2563eb;
-  color:white;
-  text-decoration:none;
-  border-radius:6px;
+.skills span {
+  display: inline-block;
+  background: #1e293b;
+  padding: 8px 14px;
+  margin: 6px;
+  border-radius: 20px;
+  font-size: 14px;
 }
 
-.contact-form{
-  max-width:420px;
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
 }
 
-.contact-form input,.contact-form textarea{
-  width:100%;
-  padding:12px;
-  margin-bottom:12px;
-  border:1px solid #cbd5f5;
-  border-radius:8px;
+.card {
+  background: #020617;
+  padding: 20px;
+  border-radius: 10px;
 }
 
-button{
-  padding:12px 20px;
-  background:#020617;
-  color:white;
-  border:none;
-  border-radius:8px;
-  cursor:pointer;
+.card h3 {
+  margin-bottom: 10px;
 }
 
-footer{
-  background:#020617;
-  color:white;
-  text-align:center;
-  padding:20px;
+.links a,
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  margin-right: 10px;
+  padding: 8px 14px;
+  background: #2563eb;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 14px;
 }
 
-@media(max-width:900px){
-  .header-flex{
-    flex-direction:column;
-    gap:15px;
-    text-align:center;
+.links a:hover,
+.btn:hover {
+  background: #1d4ed8;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: none;
+}
+
+.contact-form button {
+  padding: 12px 25px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #020617;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .header-flex {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  nav a {
+    margin: 0 10px;
   }
 }
+```
