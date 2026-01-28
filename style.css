@@ -1,131 +1,135 @@
 *{margin:0;padding:0;box-sizing:border-box}
+
+html{scroll-behavior:smooth}
+
 body{
   font-family:'Inter',sans-serif;
   background:#f8fafc;
   color:#0f172a;
 }
 
-.home{
-  padding:70px 0;
-}
-
-.resume-header{
+.container{
   max-width:1100px;
   margin:auto;
+  padding:0 20px;
+}
+
+.header{
+  background:white;
+  box-shadow:0 5px 20px rgba(0,0,0,0.08);
+}
+
+.header-flex{
   display:flex;
-  align-items:center;
   justify-content:space-between;
-  gap:40px;
+  align-items:center;
+  padding:30px 0;
 }
 
-.resume-text h1{
-  font-size:48px;
-}
-.resume-text p{
-  font-size:18px;
-  margin:10px 0 20px;
+.header h1{
+  font-size:36px;
 }
 
-.nav-links a{
-  margin-right:15px;
+.header p{
+  color:#475569;
+}
+
+nav a{
+  margin-left:18px;
   text-decoration:none;
   font-weight:600;
-  color:#020617;
-}
-
-/* PHOTO DESIGN */
-.photo-wrapper{
-  position:relative;
-  width:300px;
-  height:420px;
-  border-radius:12px;
-  overflow:hidden;
-}
-
-.photo-bg{
-  position:absolute;
-  right:0;
-  top:0;
-  width:50%;
-  height:100%;
-  background:linear-gradient(135deg,#111827,#1f2933);
-}
-
-.photo-circle{
-  position:absolute;
-  top:50%;
-  left:50%;
-  transform:translate(-50%,-50%);
-  width:220px;
-  height:220px;
-  border-radius:50%;
-  background:white;
-  padding:8px;
-}
-
-.photo-circle img{
-  width:100%;
-  height:100%;
-  border-radius:50%;
-  object-fit:cover;
+  color:#2563eb;
 }
 
 .section{
-  max-width:1100px;
-  margin:60px auto;
-  padding:0 20px;
+  padding:70px 0;
+}
+
+.gray{
+  background:#f1f5f9;
+}
+
+.section h2{
+  margin-bottom:25px;
+  font-size:28px;
 }
 
 .skills span{
   display:inline-block;
-  background:#e5e7eb;
-  padding:8px 14px;
+  background:white;
+  padding:10px 16px;
   border-radius:20px;
   margin:6px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.08);
 }
 
-.projects{
+.cards{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:20px;
+  gap:25px;
 }
 
-.project-card{
+.card{
   background:white;
-  padding:20px;
-  border-radius:12px;
-  box-shadow:0 10px 25px rgba(0,0,0,0.08);
+  padding:22px;
+  border-radius:16px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.1);
 }
 
-.cert-list li{margin:8px 0}
-
-.contact form{
-  max-width:400px;
+.links a{
+  display:inline-block;
+  margin-right:10px;
+  margin-top:10px;
+  padding:8px 14px;
+  background:#020617;
+  color:white;
+  text-decoration:none;
+  border-radius:6px;
+  font-size:14px;
 }
 
-.contact input,.contact textarea{
+.btn{
+  display:inline-block;
+  margin-top:12px;
+  padding:8px 16px;
+  background:#2563eb;
+  color:white;
+  text-decoration:none;
+  border-radius:6px;
+}
+
+.contact-form{
+  max-width:420px;
+}
+
+.contact-form input,.contact-form textarea{
   width:100%;
-  padding:10px;
+  padding:12px;
   margin-bottom:12px;
+  border:1px solid #cbd5f5;
+  border-radius:8px;
 }
 
 button{
-  padding:10px 20px;
+  padding:12px 20px;
   background:#020617;
   color:white;
   border:none;
+  border-radius:8px;
+  cursor:pointer;
 }
 
 footer{
-  text-align:center;
-  padding:20px;
   background:#020617;
   color:white;
+  text-align:center;
+  padding:20px;
 }
 
 @media(max-width:900px){
-  .resume-header{
+  .header-flex{
     flex-direction:column;
+    gap:15px;
     text-align:center;
   }
 }
