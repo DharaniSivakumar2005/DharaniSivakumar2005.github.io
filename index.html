@@ -1,129 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dharani S | Portfolio</title>
-
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dharani S Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="header">
-  <div class="container header-flex">
+<!-- ====== Navbar ====== -->
+<nav>
+  <div class="logo">Dharani S</div>
+  <div class="links">
+    <a href="#home">Home</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#internship">Internship</a>
+    <a href="#certificates">Certificates</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
 
-    <div class="header-left">
-      <img src="profile.jpg" alt="Dharani S" class="profile-pic">
-      <div>
-        <h1>Dharani S</h1>
-        <p>Full Stack Developer | CSE Student</p>
-      </div>
+<!-- ====== Home ====== -->
+<section id="home" class="home-section">
+  <div class="home-content">
+    <div class="home-text">
+      <h1>Hi, I’m Dharani S. 😎</h1>
+      <p class="role">CSE & Full-Stack Developer | AI & IoT Enthusiast</p>
+      <p class="tagline">“I build solutions that solve real-world problems 💻✨”</p>
     </div>
-
-    <nav>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#certifications">Certifications</a>
-      <a href="#contact">Contact</a>
-    </nav>
-
-  </div>
-</header>
-
-<section id="about" class="section">
-  <div class="container">
-    <h2>About Me</h2>
-    <p>I am a B.E. Computer Science Engineering student with a passion for software development and building full-stack applications.</p>
-    <p>I have hands-on experience in Java, MERN stack, and database-driven systems.</p>
-    <p><b>College:</b> National Engineering College</p>
-    <p><b>Degree:</b> B.E CSE</p>
-    <p><b>Email:</b> dharani@gmail.com</p>
-  </div>
-</section>
-
-<section id="skills" class="section dark">
-  <div class="container">
-    <h2>Technical Skills</h2>
-    <div class="skills">
-      <span>Java</span><span>Python</span><span>C</span><span>C++</span>
-      <span>HTML</span><span>CSS</span><span>JavaScript</span>
-      <span>React</span><span>Node.js</span><span>MongoDB</span>
-      <span>MySQL</span><span>Git</span>
+    <div class="home-photo">
+      <img src="images/profile.jpg" alt="Dharani S Profile Picture" class="profile-pic">
+      <span class="hello-badge">👋 Hello!</span>
     </div>
   </div>
 </section>
 
-<section id="projects" class="section">
-  <div class="container">
-    <h2>Projects</h2>
+<!-- ====== Skills ====== -->
+<section id="skills">
+  <h2>Skills 🛠️</h2>
+  <ul>
+    <li>C, C++</li>
+    <li>Python, Java</li>
+    <li>JavaScript, React, Flutter</li>
+    <li>Node.js, Express</li>
+    <li>MySQL, MongoDB, Firebase</li>
+    <li>AI / ML: TensorFlow, PyTorch</li>
+  </ul>
+</section>
 
-    <div class="cards">
-      <div class="card">
-        <h3>E-Commerce Platform</h3>
-        <p>MERN stack web application with payment integration.</p>
-        <a href="#" target="_blank">GitHub</a>
-        <a href="#" target="_blank">Live Demo</a>
-      </div>
+<!-- ====== Projects ====== -->
+<section id="projects">
+  <h2>Projects 💻</h2>
 
-      <div class="card">
-        <h3>AI Chatbot</h3>
-        <p>Customer support chatbot using Python & NLP.</p>
-        <a href="#" target="_blank">GitHub</a>
-      </div>
+  <div class="project-card">
+    <h3>AI Student Performance Analyzer</h3>
+    <p>Predicted student grades with 85% accuracy using ML models.</p>
+    <p>Tech: Python, Flask, Scikit-learn</p>
+    <a href="https://github.com/your-repo-link" target="_blank">View Project</a>
+  </div>
 
-      <div class="card">
-        <h3>IoT Smart Home</h3>
-        <p>Arduino-based automation with mobile control.</p>
-        <a href="#" target="_blank">GitHub</a>
-      </div>
-    </div>
+  <div class="project-card">
+    <h3>Flutter E-Commerce App UI</h3>
+    <p>Animated product cards, swipe-to-delete like Amazon app.</p>
+    <p>Tech: Flutter, Dart</p>
+    <a href="https://your-live-demo-link" target="_blank">View Project</a>
+  </div>
+
+  <div class="project-card">
+    <h3>ATM / Employee Management System</h3>
+    <p>CRUD operations, SQL database integration.</p>
+    <p>Tech: Java, MySQL, NetBeans</p>
+    <a href="https://github.com/your-repo-link" target="_blank">View Project</a>
+  </div>
+
+  <div class="project-card">
+    <h3>IoT Sensor Project</h3>
+    <p>Temperature & moisture monitoring using Arduino & DHT11.</p>
+    <p>Tech: Arduino, C, 16x2 LCD</p>
+    <a href="https://github.com/your-repo-link" target="_blank">View Project</a>
   </div>
 </section>
 
-<section id="certifications" class="section dark">
-  <div class="container">
-    <h2>Certifications</h2>
-
-    <div class="cards">
-      <div class="card">
-        <h3>NPTEL – Cloud Computing</h3>
-        <p>Elite</p>
-        <a href="#" target="_blank">View Certificate</a>
-      </div>
-
-      <div class="card">
-        <h3>NPTEL – Industry 4.0</h3>
-        <p>Elite</p>
-        <a href="#" target="_blank">View Certificate</a>
-      </div>
-
-      <div class="card">
-        <h3>Full Stack Internship</h3>
-        <p>CodeSoft / TechNest</p>
-        <a href="#" target="_blank">View Certificate</a>
-      </div>
-    </div>
+<!-- ====== Internship ====== -->
+<section id="internship">
+  <h2>Internship 💼</h2>
+  <div class="internship-card">
+    <h3>XYZ Company | Full-Stack Development Intern</h3>
+    <p>Worked on Dashboard UI, API Integration, Data Visualization</p>
+    <a href="https://drive.google.com/file/d/1XRmCwp_cTDzsOX_N1ZKyexijYQkLVrKM/view?usp=sharing" target="_blank">View Certificate</a>
   </div>
 </section>
 
-<section id="contact" class="section">
-  <div class="container">
-    <h2>Direct Inquiry</h2>
+<!-- ====== Certificates ====== -->
+<section id="certificates">
+  <h2>Certifications & Online Courses 🎓</h2>
 
-    <form class="contact-form" action="mailto:dharani@gmail.com" method="post">
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea rows="4" placeholder="Your Message"></textarea>
-      <button type="submit">Send Message</button>
-    </form>
+  <div class="certificate-card">
+    <h3>Developing Soft Skills & Personality (DSSP)</h3>
+    <a href="https://drive.google.com/file/d/1jIFuwX2PClr4UFocQnfB0OT7VZpgKq0G/view?usp=sharing" target="_blank">View Certificate</a>
   </div>
+
+  <div class="certificate-card">
+    <h3>Cloud Computing (CC)</h3>
+    <a href="https://drive.google.com/file/d/18N_gaREeMqICwiLMSC1LiBrvYJeyqpiw/view?usp=sharing" target="_blank">View Certificate</a>
+  </div>
+
+  <div class="certificate-card">
+    <h3>Internet of Things (IoT)</h3>
+    <a href="https://drive.google.com/file/d/1NK5b4cp4WnePddjEtTQwUwuuL_gd_g3N/view?usp=sharing" target="_blank">View Certificate</a>
+  </div>
+
+  <div class="certificate-card">
+    <h3>Privacy & Security in Social Media Apps (PSOSMA)</h3>
+    <a href="https://drive.google.com/file/d/114azpHlPVB379ljDiqQd6WGfDtQbtpm5/view?usp=sharing" target="_blank">View Certificate</a>
+  </div>
+
+  <div class="certificate-card">
+    <h3>Internet of Things 4.0 (IoT 4.0)</h3>
+    <a href="https://drive.google.com/file/d/1RADd6W7C3fjPiX3GJsZ0ZT6G5k8CnKl7/view?usp=sharing" target="_blank">View Certificate</a>
+  </div>
+
+  <div class="certificate-card">
+    <h3>Online Course – Example Course</h3>
+    <a href="https://drive.google.com/file/d/1TtQWLjy6dJCEWO7mZTxI3IvROSIk3k0m/view?usp=sharing" target="_blank">View Certificate</a>
+  </div>
+
 </section>
 
-<footer>
-  © 2024 Dharani S | All Rights Reserved
-</footer>
+<!-- ====== Contact ====== -->
+<section id="contact">
+  <h2>Contact Me 💌</h2>
+  <form action="https://formspree.io/f/your-form-id" method="POST">
+    <label>Name:</label>
+    <input type="text" name="name" required>
+
+    <label>Email:</label>
+    <input type="email" name="email" required>
+
+    <label>Message:</label>
+    <textarea name="message" rows="4" required></textarea>
+
+    <button type="submit">Send Message 💖</button>
+  </form>
+
+  <p>Or connect via <a href="https://www.linkedin.com/in/your-linkedin">LinkedIn</a> | <a href="https://github.com/your-github">GitHub</a></p>
+</section>
 
 </body>
 </html>
